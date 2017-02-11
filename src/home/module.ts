@@ -5,10 +5,14 @@ import {HttpModule} from "@angular/http";
 import {RouterModule} from "@angular/router";
 
 import { HomeComponent } from './components/home';
-import { WelcomeComponent } from './components/welcome';
+import { NewComponent } from './components/new';
+import { ListComponent } from './components/list';
+
+import { MatchService } from './services/matchService';
 
 @NgModule({
-    declarations: [HomeComponent, WelcomeComponent],
+    declarations: [HomeComponent, NewComponent, ListComponent],
+    providers: [MatchService],
     imports     : [BrowserModule, FormsModule, HttpModule],
 })
 export class HomeModule {

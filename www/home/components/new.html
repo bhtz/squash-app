@@ -1,0 +1,34 @@
+<section>
+    <h3>Nouveau match</h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Joueur 1</label>
+                    <input [(ngModel)]="match.player1" name="firstname" type="text" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Score</label>
+                    <input [(ngModel)]="match.player1Score" name="firstname" type="number" class="form-control" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Joueur 2</label>
+                    <input [(ngModel)]="match.player2" name="lastname" type="text" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label>Score</label>
+                    <input [(ngModel)]="match.player2Score" name="firstname" type="number" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block">Sauvegarder</button>
+
+    </form>
+</section>
